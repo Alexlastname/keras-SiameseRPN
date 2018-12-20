@@ -1,7 +1,7 @@
 # keras-SiameseRPN
 A keras re-implementation of DaSiameseRPN, weights converted from original pytorch version.
 
-Temporarily, it can only tracking with pretrained weights. 
+Temporarily, it can only tracking VOT dataset with pretrained weights. 
 
 Train code and evaluate code will be updated soon.
 
@@ -12,6 +12,6 @@ Train code and evaluate code will be updated soon.
 
 # How to start
 
-  1. Download baseline.h5 from release. Please it under dir '/pretrained';
-  2. run "python vot_inference.py --dir [Path to your vot dataset tracking sequence]"
+  1. Download baseline.h5 from release. Please it under dir '/pretrained'
+  2. run "python vot_inference.py --dir [Path to your own vot dataset tracking sequence]"
   
