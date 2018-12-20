@@ -4,6 +4,11 @@ import cv2
 import os
 import numpy as np
 import time
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--dir',type = str, default = '/home/xcy/append/dataset/VOT/vot2016/road', help = 'Path to vot tracking sequence')
+args = parser.parse_args() 
+
 import tensorflow as tf
 
 from build import Siamese_RPN
@@ -30,7 +35,7 @@ def init(img,xy,wh):
     network.load_weights('pretrained/baseline.h5',by_name = True)
     return network
 
-def vot_inference(base_dir = '/home/xcy/append/dataset/VOT/vot2016/road'):
+def vot_inference(base_dir):
     gt_file = os.path.join(base_dir,'groundtruth.txt')
     f_g = open(gt_file)
     for i,line in enumerate(f_g.readlines()):
