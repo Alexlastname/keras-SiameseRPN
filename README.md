@@ -12,6 +12,6 @@ Train code and evaluate code will be updated soon.
 
 # How to start
 
-  1. Download baseline.h5 from release. Please it under dir '/pretrained'
+  1. Download baseline.h5 from release or https://pan.baidu.com/s/1TIR8aqwBsV7N6CW89mreWg. Please it under dir '/pretrained'
   2. run "python vot_inference.py --dir [Path to your own vot dataset tracking sequence]"
   
